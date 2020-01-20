@@ -1,0 +1,5 @@
+.app-background {
+    background-color: #282c34;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+  }

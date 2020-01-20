@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("/fonts/opensans-light-webfont.woff2") format("woff2"), url("/fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/opensans-regular-webfont.woff2") format("woff2"), url("/fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url("/fonts/opensans-semibold-webfont.woff2") format("woff2"), url("/fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("/fonts/opensans-bold-webfont.woff2") format("woff2"), url("/fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('/fonts/Ubuntu-Bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('/fonts/Ubuntu-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url("/fonts/poppins-semibold-webfont.woff2") format("woff2"), url("/fonts/poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url("/fonts/poppins-light-webfont.woff2") format("woff2"), url("/fonts/poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app-background {
+  background-color: #282c34;
+  height: 100vh;
+  background-image: url('/images/3746.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.app-background .left-container {
+  height: 100%;
+}
+
+.witivio-logo {
+  background-image: url('/images/logo_witivio.png');
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  left: 2%;
+  top: 2%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.witivio-logo:hover {
+  opacity: 1;
+}
+
+.pompes-slider {
+  position: absolute;
+  left: 43%;
+  height: 40%;
+  max-width: 57%;
+  top: 11%;
+  overflow-x: scroll;
+  display: flex;
+  padding-bottom: 3%;
+}
+
+.pompes-slider .pompe-container  {
+  height: 100%;
+  padding: 0 3%;
+  opacity: 0.9;
+  cursor: pointer;
+
+  -webkit-animation: appear 0.5s forwards;
+  -moz-animation: appear 0.5s forwards;
+  -ms-animation: appear 0.5s forwards;
+  -o-animation: appear 0.5s forwards;
+  animation: appear 0.5s forwards;
+}
+
+.pompe-container .pompe-desc {
+  position: relative;
+  height: 20%;
+}
+
+.pompe-container .pompe-desc p{
+  margin: 0;
+  color: #ffff;
+  text-align: center;
+  display: none;
+}
+
+.pompes-slider .pompe-container img:hover {
+  opacity: 1;
+}
+
+.pompes-slider .pompe-container:hover .pompe-desc p{
+  opacity: 1;
+  display: block;
+}
+
+.pompe-container .pompe-desc .buttons {
+  display: flex;
+}
+
+.pompe-container .pompe-desc .buttons p {
+  margin: auto;
+  background-color: #d9425e;
+  padding: 0px 7px;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 25px/0px;
+  font-weight: 600;
+}
+
+.pompes-slider::-webkit-scrollbar { 
+  width: 10px;
+  height: 8px;
+  opacity: 1;
+}
+
+.pompes-slider::-webkit-scrollbar-thumb  { 
+  background-color: #d9425e;
+  border-radius: 3px;
+  background-clip: content-box;
+}
+
+.pompes-slider::-webkit-scrollbar-track {
+  background-color: rgba(58, 90, 155, 0.1);
+}
+
+.pompes-slider img {
+  max-height: 90%;
+  width: auto;
+  opacity: 0.9;
+}
+
+.titre {
+  padding-left: 2%;
+  height: 90%;
+}
+
+.titre p {
+  color: #ffff;
+  margin: 0;
+  text-shadow: 0 0px 15px #333;
+  -webkit-animation: fade_up 1.5s forwards;
+  -moz-animation: fade_up 1.5s forwards;
+  -ms-animation: fade_up 1.5s forwards;
+  -o-animation: fade_up 1.5s forwards;
+  animation: fade_up 1.5s forwards;
+}
+
+.titre .binouze {
+  font-family: 'Ubuntu-Bold';
+  font-size: 43px;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.titre .sous-titre {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.titre .main-content {
+  width: 35%;
+  top: 5%;
+  position: relative;
+  height: 100%;
+}
+
+.titre .main-content p {
+  font-family: 'Open Sans Light';
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.titre .main-content .btn-commencer {
+  display: inline-block;
+  padding: 10px;
+  margin: auto;
+  background-color: #d9425e;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  text-transform: uppercase;
+  box-shadow: 0 1px 6px #333;
+  -webkit-animation: fade_up 1.5s forwards;
+  -moz-animation: fade_up 1.5s forwards;
+  -ms-animation: fade_up 1.5s forwards;
+  -o-animation: fade_up 1.5s forwards;
+  animation: fade_up 1.5s forwards;
+  animation-delay: 1s;
+}
+
+.titre .main-content .btn-commencer:hover {
+  background-color: #e7284b;
+}
+
+.titre .main-content .btn-commencer p{
+  margin: 0;
+  font-family: 'Open Sans';
+}
+
+.titre .main-content .panel {
+  height: 50%;
+  margin-bottom: 2%;
+  width: 100%;
+  /*background-color: #383838;*/
+  opacity: 0.8;
+  border-radius: 3px;
+  /*box-shadow: 0 1px 6px #333;*/
+  padding: 10px;
+}
+
+.titre .main-content .panel .titre {
+  text-align: center;
+  font-family: 'Poppins SemiBold';
+  text-transform: uppercase;
+  height: auto;
+  margin: 0;
+  font-size: 22px;
+}
+
+.titre .main-content .panel .sous-titre {
+  text-align: center;
+  font-family: 'Poppins Light';
+  font-size: 19px;
+}
+
+.titre .main-content .panel .contenu {
+  height: 100%;
+  display: flex;
+}
+
+.form-container {
+  padding: 8%;
+}
+
+.form-container .form-group {
+  padding: 10px 0px;
+}
+
+.form-container .form-group input[type='text']{
+  padding: 6px;
+  border-radius: 4px;
+  border: 0;
+  width: 40px;
+  font-family: 'Roboto';
+  margin: 0px 10px;
+}
+
+.form-container .form-group label {
+  color: #ffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.form-container .form-group input[type='text']:focus {
+  outline: none;
+}
+
+.form-container .form-group .select {
+  padding: 6px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  width: 96%;
+}
+
+.titre .main-content .panel .contenu img {
+  height: 80%;
+}
+
+@keyframes fade_up {
+	0% { 
+		opacity: 0;
+		-webkit-transform: translate3d(0px, 100px, 0px);
+		-moz-transform: translate3d(0px, 100px, 0px);
+		-ms-transform: translate3d(0px, 100px, 0px);
+		-o-transform: translate3d(0px, 100px, 0px);
+		transform: translate3d(0px, 100px, 0px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-ms-transform: translate3d(0px, 0px, 0px);
+		-o-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@keyframes appear {
+  0% { transform: rotate(0deg) scale(0); opacity: 0;}
+  30% {  opacity: 0.2; }
+  100%  { transform: rotate(0deg) scale(1); opacity: 1;}
+}
